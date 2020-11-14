@@ -1,0 +1,133 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: url(imgs/audience.png);
+    background-repeat: repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+
+
+/* username */
+.userNameForm{
+  margin-top: 100px;
+}
+.nameText{
+  display: block;
+  font-size: 3rem;
+  margin: 50px;
+}
+.userName{
+  width: 400px;
+  font-size:2rem;
+  padding: 10px;
+  background: transparent;
+  border:none;
+  /* color: #aaa; */
+  border-bottom: 1px solid #515355;
+}
+.userName:focus{
+    outline:none;
+}
+.submitBtn{
+    width: 100px;
+    height: 60px;
+    border: 6px solid rgba(255,255,255,0.45);
+    border-radius: 50px;
+    padding: 1em 2em;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-clip: padding-box;
+    color: #FFF;
+    background-image: linear-gradient(90deg, #7b81ec, #3bd1d3);
+    cursor: pointer;
+    box-shadow: 0 5px #999;
+}
+.submitBtn:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+
+
+
+/* drum roll */
+.drum_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.drum{
+    position: relative;
+    top:150px;
+    display: flex;
+    width: 150px;
+    height: 150px;
+    margin-right: 50px;
+    /* background-color: yellow; */
+}
+.drum p{
+    position: absolute;
+    top:10%;
+    left:30%;
+    z-index:1;
+    font-family: 'Titan One', cursive;
+    font-size: 80px;
+    line-height:110px;
+    color: #FFF;
+    text-shadow: 0 1px 0 #CCC,
+                0 2px 0 #CCC,
+                0 3px 0 #CCC,
+                0 4px 0 #CCC,
+                0 5px 0 #CCC,
+                0 6px 0 transparent,
+                0 7px 0 transparent,
+                0 8px 0 transparent,
+                0 9px 0 transparent,
+    0 10px 0 transparent,
+                0 11px 0 transparent,
+                0 12px 0 transparent,
+                0 13px 0 transparent,
+    0 14px 0 transparent,
+                0 15px 0 transparent,
+                0 10px 10px rgba(0, 0, 0, .4);
+}
+.drum img{
+    width:150px;
+    height: 150px;
+    z-index:-1;
+}
+
+
+
+.animation{
+    animation: bounce .3s ease infinite alternate;
+}
+
+@keyframes bounce {
+    100% {
+      top: -20px;
+      text-shadow: 0 1px 0 #CCC,
+                   0 2px 0 #CCC,
+                   0 3px 0 #CCC,
+                   0 4px 0 #CCC,
+                   0 5px 0 #CCC,
+                   0 6px 0 #CCC,
+                   0 7px 0 #CCC,
+                   0 8px 0 #CCC,
+                   0 9px 0 #CCC,
+  0 10px 0 #CCC,
+                 0 11px 0 #CCC,
+                 0 12px 0 #CCC,
+                 0 13px 0 #CCC,
+     0 14px 0 #CCC,
+                 0 15px 0 #CCC,
+                   0 50px 25px rgba(0, 0, 0, .2);
+    }
+  }
